@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Course Content Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧑‍🏫 AI Course Content Generator</h1>
+        <p>Enter a topic to generate a detailed course outline instantly.</p>
+        
+        <input type="text" id="courseTitle" placeholder="e.g., Introduction to Machine Learning">
+        
+        <div class="button-group">
+            <button id="generateBtn" onclick="generateContent()">Generate Content</button>
+            <button id="copyBtn" onclick="copyContent()" disabled>Copy to Clipboard</button>
+        </div>
+
+        <div id="loading" class="hidden">Generating content... Please wait...</div>
+        
+        <textarea id="outputArea" readonly placeholder="Your generated syllabus will appear here..."></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
